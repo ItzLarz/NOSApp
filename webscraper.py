@@ -56,8 +56,40 @@ def from_NOS(tweet):
         return True
 
 
+# Handling the tweet if it came from NOS
 def tweet_handler(tweet):
-    print(tweet)
+    # Checking all urls in the tweet
+    for url in tweet.entities["urls"]:
+        # Validating all urls in the tweet
+        if "https://nos.nl" in url["expanded_url"]:
+
+            # Starting webscraper
+            URL = tweet.entities["urls"][url]["expanded_url"]
+            page = requests.get(URL)
+            soup = BeautifulSoup(page.content, "html.parser")
+
+            print("\n")
+
+            # Separating titles, headings and paragraphs from the page
+            for text in soup.find_all(["p", "h1", "h2"]):
+                if text.name == "p":
+                    if text["class"] == ['text_3v_J6Y0G'] and text.find("em") == None:
+                        print(text.text.strip())
+                        print("\n")
+
+                elif text.name == "h1":
+                    if text["class"] == ['title_iP7Q1aiP']:
+                        print(font.BOLD + font.UNDERLINE)
+                        print(text.text.strip())
+                        print("\n")
+                        print(font.END)
+
+                elif text.name == "h2":
+                    if text["class"] == ['heading_1HXI5QYv']:
+                        print(font.BOLD)
+                        print(text.text.strip())
+                        print("\n")
+                        print(font.END)
 
 
 # Instantiating Twitter Stream
@@ -66,33 +98,3 @@ twitterStream = tweepy.Stream(api.auth, UserTracker(api))
 # Waiting for Tweet from the NOS account
 user = api.get_user("NOS")
 twitterStream.filter(follow=[str(user.id)])
-
-
-"""
-URL = ""
-page = requests.get(URL)
-soup = BeautifulSoup(page.content, "html.parser")
-
-print("\n")
-
-for text in soup.find_all(["p", "h1", "h2"]):
-    if text.name == "p":
-        if text["class"] == ['text_3v_J6Y0G'] and text.find("em") == None:
-            print(text.text.strip())
-            print("\n")
-
-    elif text.name == "h1":
-        if text["class"] == ['title_iP7Q1aiP']:
-            print(font.BOLD + font.UNDERLINE)
-            print(text.text.strip())
-            print("\n")
-            print(font.END)
-
-    elif text.name == "h2":
-        if text["class"] == ['heading_1HXI5QYv']:
-            print(font.BOLD)
-            print(text.text.strip())
-            print("\n")
-            print(font.END)
-
-"""
