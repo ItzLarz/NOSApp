@@ -59,12 +59,12 @@ def from_NOS(tweet):
 # Handling the tweet if it came from NOS
 def tweet_handler(tweet):
     # Checking all urls in the tweet
-    for url in tweet.entities["urls"]:
+    for idx, url in enumerate(tweet.entities["urls"]):
         # Validating all urls in the tweet
         if "https://nos.nl" in url["expanded_url"]:
 
             # Starting webscraper
-            URL = tweet.entities["urls"][url]["expanded_url"]
+            URL = tweet.entities["urls"][idx]["expanded_url"]
             page = requests.get(URL)
             soup = BeautifulSoup(page.content, "html.parser")
 
@@ -90,6 +90,9 @@ def tweet_handler(tweet):
                         print(text.text.strip())
                         print("\n")
                         print(font.END)
+
+        else:
+            print("There were no valid urls")
 
 
 # Instantiating Twitter Stream
