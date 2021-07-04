@@ -1,15 +1,75 @@
+# Importing the required libraries
 import requests
 import tweepy
 from bs4 import BeautifulSoup
 
+# Importing Twitter API Tokens from secret.py
+from secret import *
 
+
+# Connecting to Twitter API
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+auth.set_access_token(access_key, access_secret)
+
+
+# Class for changing the font of the articles
 class font:
-   BOLD = '\033[1m'
-   UNDERLINE = '\033[4m'
-   END = '\033[0m'  
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
 
 
-URL = "https://nos.nl/artikel/2387937-besmettingen-lopen-op-vooral-onder-jongeren-moeten-we-ons-zorgen-maken"
+# Twitter Stream Class
+class UserTracker(tweepy.StreamListener):
+    # Initializing Class
+    def __init__(self, api):
+        self.api = api
+        self.me = api.me()
+
+    # Tweet met the criteria
+    def on_status(self, tweet):
+        print("Tweet found")
+
+        if from_NOS(tweet) == True:
+            tweet_handler(tweet)
+
+        else:
+            print("Tweet wasn't from NOS")
+
+    # Error Handling
+    def on_error(self, status):
+        print("Error detected: " + str(status))
+
+
+# Checking if tweet came from NOS
+def from_NOS(tweet):
+    if hasattr(tweet, 'retweeted_status'):
+        return False
+    elif tweet.in_reply_to_status_id != None:
+        return False
+    elif tweet.in_reply_to_screen_name != None:
+        return False
+    elif tweet.in_reply_to_user_id != None:
+        return False
+    else:
+        return True
+
+
+def tweet_handler(tweet):
+    print(tweet)
+
+
+# Instantiating Twitter Stream
+twitterStream = tweepy.Stream(api.auth, UserTracker(api))
+
+# Waiting for Tweet from the NOS account
+user = api.get_user("NOS")
+twitterStream.filter(follow=[str(user.id)])
+
+
+"""
+URL = ""
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, "html.parser")
 
@@ -35,7 +95,4 @@ for text in soup.find_all(["p", "h1", "h2"]):
             print("\n")
             print(font.END)
 
-
-
-
-         
+"""
