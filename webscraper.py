@@ -75,20 +75,17 @@ def tweet_handler(tweet):
                 if text.name == "p":
                     if text["class"] == ['text_3v_J6Y0G'] and text.find("em") == None:
                         print(text.text.strip())
-                        print("\n")
 
                 elif text.name == "h1":
                     if text["class"] == ['title_iP7Q1aiP']:
                         print(font.BOLD + font.UNDERLINE)
                         print(text.text.strip())
-                        print("\n")
                         print(font.END)
 
                 elif text.name == "h2":
                     if text["class"] == ['heading_1HXI5QYv']:
                         print(font.BOLD)
                         print(text.text.strip())
-                        print("\n")
                         print(font.END)
 
         else:
