@@ -1,0 +1,6 @@
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\tpkroot\bin\NOS.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\tpkroot\bin\NOS.pdb
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\tpkroot\NOS.deps.json
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\tpkroot\shared\res\NOSNieuws.png
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\tpkroot\tizen-manifest.xml
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\bin\Debug\tizen40\org.tizen.example.NOS-1.0.0.tpk
