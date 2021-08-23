@@ -8,4 +8,4 @@ Motivation: The official NOS Smartwatch app sucks major ass.\
 \
 Progress:\
 Script: Done.\
-App: Haven't started, cause I don't know how Android Studio works.
+App: In development (Tizen Studio)
