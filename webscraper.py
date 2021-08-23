@@ -31,11 +31,17 @@ class UserTracker(tweepy.StreamListener):
     def on_status(self, tweet):
         print("Tweet found")
 
-        if from_NOS(tweet) == True:
+        if from_NOS(tweet)[0] == True:
             tweet_handler(tweet)
 
+        elif from_NOS(tweet)[0] == False and from_NOS(tweet)[1] == "retweet":
+            print("Tweet was a retweet")
+
+        elif from_NOS(tweet)[0] == False and from_NOS(tweet)[1] == "reply":
+            print("Tweet was a reply")
+
         else:
-            print("Tweet wasn't from NOS")
+            print("Error: Can't read Tweet")
 
     # Error Handling
     def on_error(self, status):
@@ -45,15 +51,15 @@ class UserTracker(tweepy.StreamListener):
 # Checking if tweet came from NOS
 def from_NOS(tweet):
     if hasattr(tweet, 'retweeted_status'):
-        return False
+        return [False, "retweet"]
     elif tweet.in_reply_to_status_id != None:
-        return False
+        return [False, "reply"]
     elif tweet.in_reply_to_screen_name != None:
-        return False
+        return [False, "reply"]
     elif tweet.in_reply_to_user_id != None:
-        return False
+        return [False, "reply"]
     else:
-        return True
+        return [True]
 
 
 # Handling the tweet if it came from NOS
