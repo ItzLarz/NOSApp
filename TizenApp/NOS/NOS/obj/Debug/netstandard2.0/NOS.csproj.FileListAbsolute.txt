@@ -1,0 +1,10 @@
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\NOS.deps.json
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\NOS.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\NOS.pdb
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.csproj.AssemblyReference.cache
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.AssemblyInfoInputs.cache
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.AssemblyInfo.cs
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.csproj.CoreCompileInputs.cache
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\obj\Debug\netstandard2.0\NOS.pdb

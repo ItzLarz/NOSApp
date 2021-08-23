@@ -1,0 +1,16 @@
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\NOS.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\NOS.pdb
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Buffers.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Memory.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Numerics.Vectors.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Security.AccessControl.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Security.Cryptography.ProtectedData.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Security.Permissions.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\System.Security.Principal.Windows.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\Xamarin.Forms.Core.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\Xamarin.Forms.Platform.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\bin\Xamarin.Forms.Xaml.dll
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\tpkroot\NOS.deps.json
+C:\Users\lykru\Documents\Git Repositories\NOSApp\TizenApp\NOS\NOS\bin\Debug\netstandard2.0\-.tpk
