@@ -1,6 +1,11 @@
 # NOSApp
 
-An app that takes links from articles form the NOS Twitter account, validates it's an nos.nl link and scrapes the webpage for the information on the article.
-After that it sends it to the NOS app running on my Smartwatch. 
+A script that takes links of articles from the NOS Twitter account, validates it's an https://nos.nl link and scrapes the webpage for the important information in the article (headers and paragraphs). Maybe I'll add support for pictures/videos in the future. 
 
-Motivation: The official NOS Smartwatch app sucks major ass.
+After that it sends it to the NOS app running on my Smartwatch (Samsung Gear S3).\
+Motivation: The official NOS Smartwatch app sucks major ass.\
+\
+\
+Progress:\
+Script: Done.\
+App: In development (Tizen Studio)
