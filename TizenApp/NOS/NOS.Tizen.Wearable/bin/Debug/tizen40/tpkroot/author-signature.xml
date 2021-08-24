@@ -12,7 +12,7 @@
     </Reference>
     <Reference URI="NOS.Tizen.Wearable.deps.json">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>zrRPZvPFs1HidIpIt42yfQ9XUURmRXMWQrKV3ajsWkcK+g0OkJMeHhWwCuS6049la1tpY8duhfEOnMxOaK6xgg==</DigestValue>
+      <DigestValue>J/jyCQqGANC/bVGH1qViW31f2c0xlIt1XSBsv7GapXpdP4NeWdxHtoyzM1ShpsbfTRUwfBSjrW5cTvZiPaqqww==</DigestValue>
     </Reference>
     <Reference URI="bin%2FXamarin.Forms.Xaml.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -29,6 +29,38 @@
     <Reference URI="bin%2FXamarin.Forms.Core.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
       <DigestValue>eX0f/72CB+JIH7avR8g3QMD8vSvKktVr6SbuCHelOdfdKuaO3fgDkR4MzXA5NS9uE0I8xczqaEwlQP70tORgBQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.WebLogic.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>COV6OVb/4HtsYKUpbtEX7S3N38uB0B6VfVYUibwZJ5oH+EuPgFVbbzNerc2jReT2LxUir6VJnMyywINVcA/AYw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Streams.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>pojLs8ZARn9xcqtp29AopTXcP3SiWEk7/nUIwVf7mzUId2kphVYGTszz9O81jQTKvTjREv6YFirh6MtpZvoBOQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Security.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>sPZFJtyckdDv/QCMfy7CuzawqseJyFqdIylJ1BoY8u/FfOLjE7B7+WVoeZG1QvkR41wqh/mzvIvWOGubFlS2TA==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Logic.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>7JXtu4tINW/KAAaaak2fTyCQAGn0pN+DjvvRTwhtx8GRQf5M0o3Lq/eFTXNz9VBO+lAwm1tR+134UJZJHinc5g==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>dBk7by3jZ73S72ZkY4OrJfYnpidAb1yjioLh96Ad4hDVdhMSCAPrWkyjwNwPyLL+KnXe852aT8sHZRDFMOrGEw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Credentials.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>jLnWl2lpI9Oi9HwuK4HbI9L+qO0jPokS9huSJdoY8WUsAbkRW9b+T57Hz2ix85tI0r5HHEj/TiyyWZGjiUBYSQ==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Core.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>ShAENZSccd+3mw3cCZX0fcyl+b0zCZBmTxiMj7IuyOTx0WUCXssvGjn+LsqaCWV1gJ/y8ATGDnl6+m1D86Cyfw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FTweetinvi.Controllers.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>6tTZZY5FziVJWyciB5+2LfebCXRpR1aLr4FQ7ALUKRieAgoC42vUoXmn4RzZQ0lHHgkAgxZpn9gSNEtXmRuITw==</DigestValue>
     </Reference>
     <Reference URI="bin%2FSystem.Security.Principal.Windows.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -49,6 +81,10 @@
     <Reference URI="bin%2FSystem.Runtime.CompilerServices.Unsafe.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
       <DigestValue>Eo3Y5q/ke7BzuJHcx20QP7WYX5+26uqWx+ZDe2OFTrKL+oEfA2IEs7BSOphc5xkrBSETdCwInyGf6LnHjh3lng==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FSystem.Reflection.TypeExtensions.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>1vsLr8ExBSh5qJwCXfGpBLnkFWySOD9MUmzbq2WStqc9zEql3rXimEhGh70yWOQGNXs0Ge5ne5OpBjd3Dp8P8w==</DigestValue>
     </Reference>
     <Reference URI="bin%2FSystem.Memory.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -108,7 +144,7 @@
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>NfxbFLWRzNKBmeb48Ari4Y7v38oJBYCjtMP7+hPZgJtLJ8pbznS/DKkMn1lruSzzixm5VkAm8goWnOuUFuUtGQ==</DigestValue>
+      <DigestValue>/cHwfVDn6zt3HeETD/anfba8mcqbdrOdGCJMoDQm8L11uX5SxnJbcqBaHVquGBbLKmN57pZFvraei51TS00N3Q==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.dll.config">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -116,23 +152,27 @@
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>rWOb3DAlgCT1vGrk/F5MoMbgG8/PLsP2kewUO1c/hiOb58L1KbJ7ZfxUfiWU8qLnVb2A+FQToo92zzwRUPTxNw==</DigestValue>
+      <DigestValue>QsaQ5ClWHqcHjaf6Sg8ZvFayWTJt0PvZsVP+J8jCwO/ntoWnlA3xMfvCxdTKB9aERfCehsHQ+afmxH1IYIu58Q==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>ot3eOCzX1pjNYEQ7MOII0/OKcrG7Rph1J2L3yI3cGjsJ3+gmfoDu6Wf3ikFrj0H2EXbCXq5EPnLe8GESfN0rxw==</DigestValue>
+      <DigestValue>26buc4e3HTPeAbhF4LecTn9HkK/AmosUuBSMrvt0aWU8b0YhksBDu61myhJkq+vKknIGbefhUhpa0U2t+teNvA==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>EnnHWrw7iVLR3YbOCnmYXrNlsZ7d0UMyogZP5T/u7W7pTRXdtyDBHJP1kWqQIiS5zd8rcdDumz0f6OfND+TfNw==</DigestValue>
+      <DigestValue>fPcD0/wDO2P9Qc+bc9lgeBHe818tD3iTWKgGTqbMGEeW6H7cMqT6HJQRqXhAie8TpthfXSioQQ1YSpgZ/akddA==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNewtonsoft.Json.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>dyfQd8UY1JMbgChu25ga8ORteSy5l23ihs0tu0JwFXxfrhR2ayo51JtEtB5ewRPeEE3SJk7dHcZ5nJkZsvdtBA==</DigestValue>
+      <DigestValue>jR0r7d4tXzMXlWDhpPciBu4ZhLP165bpP5QynExKgETddNYvnnCCkxMt6MjzUfDn/tdKRQolGoreIFcCsp2d4Q==</DigestValue>
     </Reference>
     <Reference URI="bin%2FCoreTweet.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
       <DigestValue>ib9KSywB2DjbVy3waBXk/1J0bWdImJCIfpRblVIfeiAXcJ//7fu2B2yHYIIHzFqXYXGjfOuYD/ZGKFlULqtNhw==</DigestValue>
+    </Reference>
+    <Reference URI="bin%2FAutofac.dll">
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>ERisAr8WCkbUYl5b1K1lKA1/795Xn+NIR1WhZhO8u89mXMiZpew5VZnPNZgA/SjHMa/6Qc+oXX4RZGqt2OnPfw==</DigestValue>
     </Reference>
     <Reference URI="#prop">
       <Transforms>
@@ -143,11 +183,11 @@
     </Reference>
   </SignedInfo>
   <SignatureValue>
-HImRWvLH7i+S1SXMoI3lKzqnfAAdvMnmaOQGmrmCEEMkE9LV2NlWRdlHO8ujYl1Vb9NwsABigKbk
-VDMurBJSr9beUqD0tW6rEsNXHm6sifN39MRLSDe5JCJT4c4oDQT2JmNOsleRmyKR8SsvIFj7Zapo
-DPAIC3NuRTJyOahZt6jjKzrsCMA/b1NrzsJsvxNs0Td8wlPdUnDsOuzcTQ1ctKAamhE8X/3EZKx7
-/N5jp8kFmfrg7EIfhNx5NC9PZsB5Xz1eanIip4DVrAyfES48SSEvA/+67ATgIBLUqd7Z7ycQH6w5
-nrjZ7owCsX8hUg/fsK1ZMp3H2xDbnyEyi3ESYg==
+grRT/BQWRPRhPqymYHGcrMrzSBfvSpa3anBc2DuL4uuCfv1EpkGxyjxR5A9a2CNyBbI7U106I6v0
+vbAvyTD/FKaZNuLwESLGaOY1furgE8m0h/e8XKEfMp8i8tHy85/NA8AIerw+LgwJLNA9SDY8BV2f
+K/T1nVDO8RDTSNga0npWvtdQKwW06rxez9U0lYPYWTRqoAOPTZtC/erDy6knr39YoB2/MVywdLvW
+UgqZ8UiwefNwTe3ck+f/AepgH009HwA6neBgjuC1rFZHGKUbe4hSTpdTDw+G4Z6m/2R7sNc2U2B8
+eqLHwEktEfq5+Zd3Wqj9fy3o0g/tFg+t7bg5DQ==
 </SignatureValue>
   <KeyInfo>
     <X509Data>

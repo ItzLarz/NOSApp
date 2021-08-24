@@ -22,6 +22,6 @@
     <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2083\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2083\buildTransitive\Xamarin.Forms.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\lykru\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
+    <PkgTweetinviAPI Condition=" '$(PkgTweetinviAPI)' == '' ">C:\Users\lykru\.nuget\packages\tweetinviapi\5.0.4</PkgTweetinviAPI>
   </PropertyGroup>
 </Project>
