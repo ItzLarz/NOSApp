@@ -8,4 +8,4 @@ Motivation: The official NOS Smartwatch app sucks major ass.\
 \
 Progress:\
 Script: Done.\
-App: In development (Tizen Studio)
+App: In development (Tizen .NET)
