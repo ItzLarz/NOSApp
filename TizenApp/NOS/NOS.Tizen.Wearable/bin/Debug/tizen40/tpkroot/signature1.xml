@@ -4,7 +4,7 @@
     <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
     <Reference URI="tizen-manifest.xml">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>fjwNUFR1wAjjJdEZc+fBgbeIy3DDaO9XMsakB48D8gtpkoTP3/1XZD8k2fJMxYltDsPHtqXZG2Y2mRDm3c7rMg==</DigestValue>
+      <DigestValue>4HY3/mGQoCCpiY3flrJZwClcNW0GAbGiRsN2bT4qib+mOJX7qdOQrMaoanSF/URoj76bQfKh9E0pSV7exQKwaA==</DigestValue>
     </Reference>
     <Reference URI="shared%2Fres%2FNOSNieuws.Tizen.Wearable.png">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -144,23 +144,23 @@
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>/cHwfVDn6zt3HeETD/anfba8mcqbdrOdGCJMoDQm8L11uX5SxnJbcqBaHVquGBbLKmN57pZFvraei51TS00N3Q==</DigestValue>
+      <DigestValue>7YLG802qrR7VQq+DkVPHWtZe3s7uLTVzT/v6pPgfFhSS9mwY85Dq/0iFNavZ+u7ZWa9BhNBb4H5g3+qqX5Llew==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.dll.config">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>U1+nPrIci+kt8+Ipa//CqYSxMna7W5FmGB98gqpxRgfWhCFtErYlb2Hu/EXauiXD8bxMPBG6eIh8INEAv3VtmQ==</DigestValue>
+      <DigestValue>5jTPMV8VBWWJHmI3kRgkOwr8Z/1WjA8vL+MmyYk6Aa+y5Is6DPU77OhXdvOctWHpdp4u4lg+q/b1VzAkuNUIhw==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.Tizen.Wearable.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>QsaQ5ClWHqcHjaf6Sg8ZvFayWTJt0PvZsVP+J8jCwO/ntoWnlA3xMfvCxdTKB9aERfCehsHQ+afmxH1IYIu58Q==</DigestValue>
+      <DigestValue>vsJ1B2UxbuhNxjG0Xu91rxiXkpUfsTT71yEmUAmIuEdZZmRSpkuILKM4lzOgfFxsc1FBuE+MdBPiPlY2+Rsq2g==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.pdb">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>26buc4e3HTPeAbhF4LecTn9HkK/AmosUuBSMrvt0aWU8b0YhksBDu61myhJkq+vKknIGbefhUhpa0U2t+teNvA==</DigestValue>
+      <DigestValue>s1dwPXkF+w2mLAWhS3he4/QvgXXVCmQbTPk/W1cj2+O+vj2vZXYna9aoC6cXTI1v5T0MQG0MvAyp4RXynckf1A==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNOS.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>fPcD0/wDO2P9Qc+bc9lgeBHe818tD3iTWKgGTqbMGEeW6H7cMqT6HJQRqXhAie8TpthfXSioQQ1YSpgZ/akddA==</DigestValue>
+      <DigestValue>1ILdiLvyjpXxTwKrt3CJPRaJqac0wdvZlzpb+0ajYNu1ksNcjM0ptW6NHAz2YmCHt+CSyMKTpfxKYNf5dQpXbA==</DigestValue>
     </Reference>
     <Reference URI="bin%2FNewtonsoft.Json.dll">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
@@ -176,7 +176,7 @@
     </Reference>
     <Reference URI="author-signature.xml">
       <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
-      <DigestValue>G+5NKZ4gDTbwNq0x6AZwBCC4BToMay4ekv+aeNNVaoboi2SLqEXy14zHpJSvX+JPGk4Y4XSGRypcb7i7BrIz5A==</DigestValue>
+      <DigestValue>Rf17rY0EQll4mREm5Cw2ps+s0WBEXNvb46APA6fDaDS96nCgmFpvZDKp+KXtFZf7OyvvO3MNegufV/PlMuHa5Q==</DigestValue>
     </Reference>
     <Reference URI="#prop">
       <Transforms>
@@ -187,11 +187,11 @@
     </Reference>
   </SignedInfo>
   <SignatureValue>
-BA0gurXMf0BDsym2RnAP6W/ixrC9G10vFkHciDqdY7w6BW0ZIJfUWSpMecPU5hHQt0DTj9tyI4CX
-102Lls59JwGj8vVhm5OW1VdCaJmW3ZovJxTByYsaVh5oy5NuV6XMml7MVJUgRdALmAh77FpkVecG
-bxE/pe40QsBPrIHYrP/x7/w3GvpE1k9UVeI0EeXtlSX5ZpTME8IC/cNjqP4R1p3eN6ROP0oFlSSI
-jSKGvGDa8hC0Fxll6iIivR0k/zh2weYgVEO1jKQNfSUQ9x7NNdzua4clZ20HYOj2EqXazZGdCFG9
-itAKFVRf/pAp2up/T0Wpj3nTQevkZXvwxcIeCA==
+AYpHfwzU7UFN+dZdy1UwTER4VwWeZe/tN7rblBl9/lxiDQT+tvZE35pj4/cicZtC+CwvFZbvgW+4
+VIjaaR7/tJ6qj132r7zPjll4A+TpfcrSXvWPs/UKUMm4tjSlpiSWNE/VoiZksHnxVqTKKfqACLB7
+zM5bUkuqt22+Ulcr/LgiLxh92m5RL8K4Y0jKwCJU4ggdPiZe381GfTxJmY/YJYJANdbVnSinf6hC
+QA16yyDCSm+eeiaHvGz0vHuhQoufpl8ftrEr/znBDPYDgs5PYl/3drwOruMTeVI+jazzjCxCeuTI
+2lJsy1XLbHx103hkFM/6ozwoW2K4jYPDc3HNRA==
 </SignatureValue>
   <KeyInfo>
     <X509Data>

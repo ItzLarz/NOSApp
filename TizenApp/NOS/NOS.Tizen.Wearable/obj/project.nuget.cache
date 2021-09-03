@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B3luFxW23vo5hG9JScKCKCROh/GpxrW0DULd40wUQwQeg8b23aQcu+2y0kAnXkILQbDJtB7E71aWoKNNl3FhCQ==",
+  "dgSpecHash": "fOE7fHldqEE50Gc1wDLZuLQrA3V9k7qmDhrunAXLoRXl0YolXciHpantanWiEZ7NKFFbIYup0uPoviOHHH9XFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lykru\\Documents\\Git Repositories\\NOSApp\\TizenApp\\NOS\\NOS.Tizen.Wearable\\NOS.Tizen.Wearable.csproj",
   "expectedPackageFiles": [
@@ -71,6 +71,7 @@
     "C:\\Users\\lykru\\.nuget\\packages\\tizen.net\\8.0.0.15631\\tizen.net.8.0.0.15631.nupkg.sha512",
     "C:\\Users\\lykru\\.nuget\\packages\\tizen.net.api4\\4.0.1.14164\\tizen.net.api4.4.0.1.14164.nupkg.sha512",
     "C:\\Users\\lykru\\.nuget\\packages\\tweetinviapi\\5.0.4\\tweetinviapi.5.0.4.nupkg.sha512",
+    "C:\\Users\\lykru\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\lykru\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
   ],
   "logs": []
