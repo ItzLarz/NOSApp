@@ -8,4 +8,4 @@ Motivation: The official NOS Smartwatch app sucks major ass.\
 \
 Progress:\
 Webscraper: Done.\
-App: In development (Tizen Wep Application)
+App: In development (Tizen Web Application)
