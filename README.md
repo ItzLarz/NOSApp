@@ -7,5 +7,5 @@ After that it sends it to the (custom) NOS app running on my Smartwatch (Samsung
 Motivation: The official NOS Smartwatch app sucks major ass.\
 \
 Progress:\
-Script: Done.\
-App: In development (Tizen .NET)
+Webscraper: Done.\
+App: In development (Tizen Wep Application)
