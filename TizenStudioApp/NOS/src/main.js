@@ -5,8 +5,8 @@ const Twit = require("twit");
 const scraper = require("./webscraper")
 
 // Creating Twitter instance
-const secret = require("./keys");
-const T = new Twit(secret);
+// const secret = require("dist/keys.js");
+// const T = new Twit(secret);
 
 function getTweet(id) {
 	return new Promise(function (resolve, reject) {
@@ -60,22 +60,36 @@ window.onload = () => {
 	// const version = appcommon.getVersion();
 	// console.log('appcommon version : ', version);
 	// document.body.addEventListener('keydown', keydownHandler);
+	var box = document.querySelector('#textbox');
+	box.innerHTML = document.domain;
 
-	var textbox = document.querySelector('.contents');
-	textbox.addEventListener("click", async function () {
-		var tweet = await latestTweets("NOS", 1);
-		var title = tweet.full_text;
+	fetch(`https://feeds.nos.nl/nosnieuwsalgemeen`,{mode: "no-cors"})
+		.then(response => response.text())
+		.then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+		.then(doc => {
+			let items = doc.querySelectorAll("item");
+			let data = [];
+			items.forEach(item => data.push({ title: item.querySelector("title").textContent, link: item.querySelector('link').textContent, description: item.querySelector('description').textContent, enclosure: item.querySelector('enclosure').getAttribute("url") }))
+			return data
+		})
+		.then(console.log)
 
-		var box = document.querySelector('#textbox');
-		box.innerHTML = title;
-		console.log(title);
 
-		var data = await scraper.tweetHandler(tweet);
-		for (var i = 0; i < data.length; i++) {
-			console.log(i)
-		}
 
-	});
+	// console.log(title);
+
+	// var textbox = document.querySelector('.contents');
+	// textbox.addEventListener("click", async function () {
+	// 	var tweet = await latestTweets("NOS", 1);
+	// 	var title = tweet.full_text;
+
+
+	// 	var data = await scraper.tweetHandler(tweet);
+	// 	for (var i = 0; i < data.length; i++) {
+	// 		console.log(i)
+	// 	}
+
+	// });
 };
 
 // const keyName = {
