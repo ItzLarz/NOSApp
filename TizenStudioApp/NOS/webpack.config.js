@@ -45,7 +45,7 @@ module.exports = {
         fs: 'empty',
     },
     plugins: [
-        new webpack.IgnorePlugin({resourceRegExp: new RegExp("secret.js")}),
+        new webpack.IgnorePlugin({resourceRegExp: new RegExp("keys")}),
         new webpack.IgnorePlugin({resourceRegExp: new RegExp("keys.js")}),
     ],
 };

@@ -5,7 +5,7 @@ const Twit = require("twit");
 const scraper = require("./webscraper")
 
 // Creating Twitter instance
-const secret = require("./secret");
+const secret = require("./keys");
 const T = new Twit(secret);
 
 function getTweet(id) {
