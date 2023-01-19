@@ -10,26 +10,33 @@
 
 		<title>NOS Feed</title>
 
-		<link rel="stylesheet" href="../tau/wearable/theme/changeable/tau.min.css" />
+		<link
+			rel="stylesheet"
+			href="./tau/wearable/theme/changeable/tau.min.css"
+		/>
 		<link
 			rel="stylesheet"
 			media="all and (-tizen-geometric-shape: circle)"
-			href="../tau/wearable/theme/changeable/tau.circle.min.css"
+			href="./tau/wearable/theme/changeable/tau.circle.min.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
-		<div class="ui-page ui-page-active" id="main">
-			<header>
-				<h2 class="ui-title">TAU Basic</h2>
-			</header>
-			<div class="ui-content ui-content-padding">
-				<p>Hello!</p>
+		<div id="pages">
+			<div class="ui-page ui-page-active" id="main">
+				<!-- <header>
+					<h2 class="ui-title">NOS App</h2>
+				</header>
+				<div class="ui-content ui-content-padding">
+					<p>Error loading the articles</p>
+				</div> -->
+				<img src="./loading-icon.png">
 			</div>
 		</div>
 
-		<script src="../tau/wearable/js/tau.min.js"></script>
-		<script type="text/javascript" src="bundle.js"></script>
+		<script src="./tau/wearable/js/tau.min.js"></script>
+		<!-- <script type="text/javascript" src="bundle.js"></script> -->
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

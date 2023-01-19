@@ -1,11 +1,7 @@
 # NOSApp
 
-A script that takes links of articles from the NOS (Dutch news site) Twitter account, validates it's an https://nos.nl link and scrapes the webpage for the important information in the article (headers and paragraphs). Maybe I'll add support for pictures/videos in the future. 
-
-After that it sends it to the (custom) NOS app running on my Smartwatch (Samsung Gear S3).\
+A script that fetches articles from the NOS (Dutch news site) RSS Feed. Support for images not included (yet).\
 \
-Motivation: The official NOS Smartwatch app sucks major ass.\
+The script runs on a (custom) NOS app for Tizen Wearables, such as the Samsung Gear S3.\
 \
-Progress:\
-Webscraper: Done.\
-App: In development (Tizen Web Application)
+Motivation: The official NOS Smartwatch app sucked and is defunct now.\

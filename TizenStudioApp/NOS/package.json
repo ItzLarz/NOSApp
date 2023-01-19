@@ -2,22 +2,21 @@
 	"name": "nos-tizen-app",
 	"version": "1.0.0",
 	"description": "",
-	"main": "",
 	"scripts": {
 		"build": "webpack"
 	},
 	"author": "ItzLarz",
 	"license": "GNU General Public License V3",
 	"devDependencies": {
-		"@babel/preset-env": "^7.20.2",
 		"@types/tizen-common-web": "^1.0.0",
 		"@types/tizen-tv-webapis": "^1.0.0",
 		"@types/webpack-env": "^1.18.0",
+		"@babel/preset-env": "^7.20.2",
 		"babel-loader": "^8.3.0",
 		"file-loader": "^6.0.0",
-		"prettier": "2.8.3",
 		"webpack": "^5.75.0",
-		"webpack-cli": "^5.0.1"
+		"webpack-cli": "^5.0.1",
+		"prettier": "2.8.3"
 	},
 	"dependencies": {
 		"tizen-common-web": "^1.0.0",
