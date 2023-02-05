@@ -1,16 +1,10 @@
 // Importing dependencies
-import { appcommon } from "tizen-tv-webapis";
-import { application } from "tizen-common-web";
+// import { appcommon } from "tizen-tv-webapis";
+// import { application } from "tizen-common-web";
 
-let debugMode = false;
+window.addEventListener("tizenhwkey", keydownHandler);
 
 window.onload = async () => {
-	if (!debugMode) {
-		const version = appcommon.getVersion();
-		console.log("App version:", version);
-		document.body.addEventListener("keydown", keydownHandler);
-	}
-
 	let articles = [];
 
 	await fetch(`https://nos-app.vercel.app/api/rss`)
@@ -28,6 +22,8 @@ window.onload = async () => {
 			});
 		});
 
+	console.log(articles);
+
 	let pagesDiv = document.getElementById("pages");
 	pagesDiv.removeChild(document.getElementById("main"));
 
@@ -36,30 +32,56 @@ window.onload = async () => {
 		page.setAttribute("id", "page" + String(idx + 1));
 		page.className = "ui-page";
 		content = document.createElement("div");
-		content.className = "ui-page";
+		content.className = "ui-content";
 		content.innerHTML = item.title;
+		// content.classList.add("center-fit");
+		page.appendChild(content);
 		pagesDiv.appendChild(page);
 	});
 
-	document.getElementById("page1").classList.add("ui-page-active");
+	// document.getElementById("page1").classList.add("ui-page-active");
 
-	console.log(articles);
+	window.addEventListener("rotarydetent", function (ev) {
+		var direction = ev.detail.direction;
+		page = document.getElementsByClassName("ui-page-active")[0];
 
-	// var textbox = document.querySelector(".contents");
+		// FIX THIS
+		if (!page) {
+			page = document.getElementById("page1")
+		}
+		numb = page.id.replace(/[^0-9]/g, "");
+		console.log(document.getElementsByClassName("ui-page-active"));
+
+		if (direction == "CW") {
+			// console.log("CW");
+			if (page.id != "page20") {
+				// tau.changePage("#page" + String(Number(numb) + 1));
+				console.log("debug1");
+				console.log("page" + String(Number(numb) + 1));
+				window.location.hash = "page" + String(Number(numb) + 1);
+			}
+		} else if (direction == "CCW") {
+			// console.log("CCW");
+			if (page.id != "page1") {
+				console.log("debug2");
+				console.log("page" + String(Number(numb) - 1));
+				window.location.hash = "page" + String(Number(numb) - 1);
+			}
+		}
+		console.log();
+	});
+
+	// var textbox = document.querySelector("div");
 	// textbox.addEventListener("click", function () {
-	// 	console.log("debug");
+	// 	textbox.innerHTML = "fakka";
 	// });
 };
 
-const keyName = {
-	10009: "return",
-};
-
-function keydownHandler(e) {
-	console.log(e.keyCode);
-	switch (keyName[e.keyCode]) {
-		case "return":
-			application.getCurrentApplication().exit();
-			break;
-	}
+function keydownHandler(ev) {
+	console.log(ev.keyName);
+	// switch (ev.keyName) {
+	// 	case "back":
+	// 	// 	application.getCurrentApplication().exit();
+	// 	// 	break;
+	// }
 }
