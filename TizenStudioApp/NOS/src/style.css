@@ -1,13 +1,56 @@
+@font-face {
+	font-family: "Effra-Bold";
+	font-style: normal;
+	font-display: block;
+	font-weight: 700;
+	src: local("EffraBold"), local("EffraBold"),
+		url("https://static.nos.nl/fonts/effra/EffraBold.woff?v=prod-app")
+			format("woff"),
+		url("https://static.nos.nl/fonts/effra/EffraBold.woff2?v=prod-app")
+			format("woff2");
+}
+
+body {
+	background-color: #fff;
+}
+
+.ui-page {
+	background-color: #fff;
+}
+
 .center-fit {
 	max-width: 100%;
 	max-height: 100vh;
 	margin: auto;
 }
 
-div {
-	text-align: center;
+h1 {
+	font-family: "Effra-Bold";
+	color: #000;
+	font-size: 28px;
+}
+
+h2 {
+	font-family: "Effra-Bold";
+	color: #222;
+	font-size: 20px;
 }
 
 p {
-	text-align: center;
+	color: #222;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	/* margin: 1.6rem auto; */
+	/* max-width: 40rem; */
 }
+
+time {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+	font-size: 16px;
+}
+
+/* img {
+	border-radius: 4px;
+	width: 100%;
+} */

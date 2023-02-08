@@ -24,13 +24,18 @@ module.exports = {
 				loader: "file-loader",
 				options: {
 					name: "[name].[ext]",
+					exclude: /node_modules/,
 				},
+			},
+			{
+				test: /\.ts?$/,
+				use: "ts-loader",
 			},
 		],
 	},
 	resolve: {
 		modules: [path.resolve("./node_modules")],
-		extensions: [".js", ".jsx"],
+		extensions: [".js", ".jsx", ".ts", ".tsx"],
 		fallback: {
 			fs: false,
 		},

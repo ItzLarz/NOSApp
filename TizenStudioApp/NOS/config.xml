@@ -4,6 +4,7 @@
     <tizen:application id="17Z2ZOfqWR.NOS" package="17Z2ZOfqWR" required_version="4.0"/>
     <author href="https://itzlarz.dev">ItzLarz</author>
     <content src="src/index.html"/>
+    <feature name="http://tizen.org/api/systeminfo" required="true"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <feature name="http://tizen.org/feature/input.rotating_bezel"/>
     <feature name="http://tizen.org/feature/multi_point_touch.pinch_zoom"/>
@@ -17,4 +18,7 @@
     <tizen:profile name="wearable"/>
     <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
     <access origin="*" subdomains="true"/>
+
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="5.5"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
 </widget>

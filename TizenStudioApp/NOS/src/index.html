@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 		<meta name="description" content="NOS App for the latest news" />
 
@@ -21,19 +21,14 @@
 
 	<body>
 		<div id="pages">
-			<div class="ui-page" id="main">
-				<!-- <header>
-					<h2 class="ui-title">NOS App</h2>
-				</header>
-				<div class="ui-content ui-content-padding">
-					<p>Error loading the articles</p>
-				</div> -->
-				<img src="./loading-icon.png" class="center-fit" />
+			<div class="ui-page" id="page1">
+				<img src="./loading-icon.png" class="center-fit" id="loading-icon" />
 			</div>
 		</div>
 
-		<script src="./tau/wearable/js/tau.min.js"></script>
 		<!-- <script type="text/javascript" src="bundle.js"></script> -->
 		<script type="text/javascript" src="main.js"></script>
+		<!-- <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js"></script> -->
+		<script src="./tau/wearable/js/tau.min.js"></script>
 	</body>
 </html>

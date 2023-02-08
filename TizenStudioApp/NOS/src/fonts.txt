@@ -1,0 +1,4 @@
+Titel: 28px Effra-Bold #000000
+Kopjes: 20px Effra-Bold #222222
+Datum: 16px Helvetica Neue #666666
+Tekst: 18px Helvetica Neue #222222
