@@ -1,23 +1,11 @@
-// Importing dependencies
-// import { appcommon } from "tizen-tv-webapis";
-// import { application } from "tizen-common-web";
-
-// import { productinfo } from "tizen-tv-webapis";
-// import { systeminfo } from "tizen-common-web";
-
-// const { getFirmware, getDuid, getModelCode } = productinfo;
-// const { getCapability } = systeminfo;
-
-let artOpen = false;
+window.addEventListener("tizenhwkey", keydownHandler);
+window.addEventListener("keydown", keydownHandler);
+window.addEventListener("rotarydetent", changePage);
+window.addEventListener("swipe", changePage);
 
 window.onload = async () => {
-	window.addEventListener("tizenhwkey", keydownHandler);
-
 	let articles = await loadArticles();
 	loadPages(articles);
-
-	window.addEventListener("rotarydetent", changePage);
-	// window.addEventListener("swipe", changePage);
 	document.body.addEventListener("click", () => openArticle(articles));
 };
 
@@ -51,20 +39,18 @@ function loadPages(articles) {
 		let page;
 		if (idx != 0) {
 			page = document.createElement("div");
-			page.setAttribute("id", "page" + String(idx + 1));
-			page.className = "ui-page";
+			page.id = "page" + String(idx + 1);
+			page.classList.add("page", "ui-page");
 		} else {
 			page = document.getElementById("page1");
 			document.getElementById("loading-icon").remove();
 		}
 
-		let contDiv = document.createElement("div");
 		let content = document.createElement("h1");
-		content.classList.add = "ui-content";
-		content.classList.add = "title";
+		content.classList.add("ui-content");
+		content.classList.add("title");
 		content.innerHTML = item.title;
-		contDiv.appendChild(content);
-		page.appendChild(contDiv);
+		page.appendChild(content);
 
 		if (idx != 0) {
 			pagesDiv.appendChild(page);
@@ -73,65 +59,92 @@ function loadPages(articles) {
 }
 
 function changePage(ev) {
+	console.log(ev.detail.direction);
 	let page = document.getElementsByClassName("ui-page-active")[0];
 	if (page.id.includes("page")) {
+		[].slice.call(document.body.children).forEach((item, idx) => {
+			if (item.id.includes("article")) {
+				document.body.removeChild(item);
+			}
+		});
+
 		let direction = ev.detail.direction;
 		let page = document.getElementsByClassName("ui-page-active")[0];
 		let numb = page.id.replace(/[^0-9]/g, "");
+		let newPage;
 
-		if (direction == "CW") {
-			if (page.id != "page20") {
-				window.location.hash = "page" + String(Number(numb) + 1);
-				console.log("Changed to page " + String(Number(numb) + 1));
-			}
-		} else if (direction == "CCW") {
-			if (page.id != "page1") {
-				window.location.hash = "page" + String(Number(numb) - 1);
-				console.log("Changed to page " + String(Number(numb) - 1));
-			}
+		if (direction == "CW" && page.id != "page20") {
+			newPage = document.getElementById("page" + String(Number(numb) + 1));
+			tau.changePage("#" + newPage.id);
+		} else if (direction == "CCW" && page.id != "page1") {
+			newPage = document.getElementById("page" + String(Number(numb) - 1));
+			tau.changePage("#" + newPage.id);
 		}
+
+		console.log("Changed to page " + newPage.id);
 	}
 }
 
 function openArticle(articles) {
 	let page = document.getElementsByClassName("ui-page-active")[0];
-	let numb = page.id.replace(/[^0-9]/g, "");
-	let item = articles[numb - 1];
+	if (!page.id.includes("article")) {
+		let numb = page.id.replace(/[^0-9]/g, "");
+		let item = articles[numb - 1];
 
-	let article = document.createElement("div");
-	article.id = "article" + numb;
-	article.className = "ui-page";
+		let article = document.createElement("div");
+		article.id = "article" + numb;
+		article.classList.add("article", "ui-page", "ui-scroller", "ui-overflow");
 
-	let title = document.createElement("h1");
-	title.innerHTML = item.title;
-	let date = document.createElement("time");
-	let dateObj = new Date(item.date);
-	let options = {
-		dateStyle: "full",
-		timeStyle: "short",
-	};
+		let content = document.createElement("div");
+		content.classList.add("ui-content", "ui-scrollview", "ui-scrollbar");
 
-	date.innerHTML =
-		dateObj.toLocaleString("nl-NL", options).charAt(0).toUpperCase() +
-		dateObj.toLocaleString("nl-NL", options).slice(1);
+		let title = document.createElement("h1");
+		title.innerHTML = item.title;
+		content.appendChild(title);
 
-	article.appendChild(title);
-	article.appendChild(date);
-	article.innerHTML += item.text;
+		let date = document.createElement("p");
+		date.classList.add("date");
+		let dateObj = new Date(item.date);
+		let options = {
+			dateStyle: "full",
+			timeStyle: "short",
+		};
 
-	document.body.appendChild(article);
-	window.location.hash = "article" + numb;
+		date.innerHTML =
+			dateObj.toLocaleString("nl-NL", options).charAt(0).toUpperCase() +
+			dateObj.toLocaleString("nl-NL", options).slice(1);
+
+		content.appendChild(date);
+
+		console.log(item.text);
+		const parser = new DOMParser();
+		let elements = Array.from(
+			parser.parseFromString(item.text, "text/html").querySelectorAll("h2, p")
+		);
+
+		elements.forEach((element) => { 
+			content.appendChild(element);
+		});
+
+		article.appendChild(content);
+		document.body.appendChild(article);
+		tau.changePage("#article" + numb);
+	}
 }
 
 function keydownHandler(ev) {
 	console.log(ev.keyName);
-	if (ev.keyName == "back") {
+	if (ev.keyName == "back" || ev.keyCode == 27) {
 		let page = document.getElementsByClassName("ui-page-active")[0];
 		if (page.id.includes("article")) {
-			let numb = page.id.replace(/[^0-9]/g, "");
-			window.location.hash = "page" + numb;
+			[].slice.call(document.body.children).forEach((item, idx) => {
+				if (item.id.includes("article")) {
+					document.body.removeChild(item);
+				}
+			});
+			tau.changePage("#page" + page.id.replace(/[^0-9]/g, ""));
 		} else {
-			tizen.application.getCurrentApplication().exit();
+			window.tizen.application.getCurrentApplication().exit();
 		}
 	}
 }

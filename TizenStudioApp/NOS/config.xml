@@ -2,23 +2,25 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
     xmlns:tizen="http://tizen.org/ns/widgets" id="https://itzlarz.dev/NOS" version="1.0.0" viewmodes="maximized">
     <tizen:application id="17Z2ZOfqWR.NOS" package="17Z2ZOfqWR" required_version="4.0"/>
+    <name>NOS</name>
     <author href="https://itzlarz.dev">ItzLarz</author>
+    <license href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License Version 3</license>
     <content src="src/index.html"/>
+    <icon src="app-icon.png"/>
+    <access origin="*" subdomains="true"/>
+
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+    <tizen:privilege name="http://tizen.org/privilege/push"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/notification"/>
+
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="5.5"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+
     <feature name="http://tizen.org/api/systeminfo" required="true"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <feature name="http://tizen.org/feature/input.rotating_bezel"/>
     <feature name="http://tizen.org/feature/multi_point_touch.pinch_zoom"/>
     <feature name="http://tizen.org/feature/network.internet"/>
-    <icon src="app-icon.png"/>
-    <license href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License Version 3</license>
-    <name>NOS</name>
-    <tizen:privilege name="http://tizen.org/privilege/push"/>
-    <tizen:privilege name="http://tizen.org/privilege/internet"/>
-    <tizen:privilege name="http://tizen.org/privilege/notification"/>
-    <tizen:profile name="wearable"/>
-    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
-    <access origin="*" subdomains="true"/>
-
-    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="5.5"/>
-    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
 </widget>

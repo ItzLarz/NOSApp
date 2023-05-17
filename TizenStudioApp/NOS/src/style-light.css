@@ -1,0 +1,121 @@
+@font-face {
+	font-family: "Effra-Bold";
+	font-style: normal;
+	font-display: block;
+	font-weight: 700;
+	src: local("EffraBold"), local("EffraBold"),
+		url("https://static.nos.nl/fonts/effra/EffraBold.woff?v=prod-app")
+			format("woff"),
+		url("https://static.nos.nl/fonts/effra/EffraBold.woff2?v=prod-app")
+			format("woff2");
+}
+
+.ui-page-container {
+	background-color: #000;
+	width: 100%;
+}
+
+/* Centering title on scrollpages */
+.ui-page.page {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+.ui-page-active.page {
+	z-index: 1;
+}
+
+.ui-page-hidden.page {
+	z-index: -1;
+	display: none !important;
+}
+
+.ui-content.title {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+}
+
+/* Centering article and adding padding */
+.ui-page.article {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+.ui-scrollview {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	margin: 0;
+	padding: 50% 8vw;
+	flex-direction: column;
+}
+
+/* .ui-scrollview h1 {
+	margin-top: -0.5em;
+} */
+
+/* .ui-overflow {
+	overflow-y: scroll;
+	overflow-x: hidden;
+} */
+
+
+/* Fonts and sizes */
+h1 {
+	font-family: "Effra-Bold";
+	color: #000;
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: 100%;
+}
+
+h2 {
+	font-family: "Effra-Bold";
+	color: #222;
+	font-size: 18px;
+	margin: 0;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: 100%;
+}
+
+.date {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+	font-size: 16px;
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	border-radius: 4px;
+	display: block;
+}
