@@ -51,6 +51,14 @@ function loadPages(articles) {
 		content.classList.add("title");
 		content.innerHTML = item.title;
 		page.appendChild(content);
+		
+		let image = document.createElement("img");
+		image.classList.add("ui-content");
+		image.classList.add("img");
+		image.src = item.img;
+		page.appendChild(image);
+
+		
 
 		if (idx != 0) {
 			pagesDiv.appendChild(page);
@@ -91,12 +99,13 @@ function openArticle(articles) {
 		let numb = page.id.replace(/[^0-9]/g, "");
 		let item = articles[numb - 1];
 
+		
 		let article = document.createElement("div");
 		article.id = "article" + numb;
 		article.classList.add("article", "ui-page", "ui-scroller", "ui-overflow");
 
 		let content = document.createElement("div");
-		content.classList.add("ui-content", "ui-scrollview", "ui-scrollbar");
+		content.classList.add("ui-content", "ui-scrollview", "ui-scrollbar", "ui-overflow");
 
 		let title = document.createElement("h1");
 		title.innerHTML = item.title;

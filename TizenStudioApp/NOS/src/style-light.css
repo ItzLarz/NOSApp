@@ -18,13 +18,12 @@
 /* Centering title on scrollpages */
 .ui-page.page {
 	background-color: #fff;
-	position: absolute;
+	/* position: absolute; */
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	display: block;
-	overflow: hidden;
+	/* height: 100%; */
+	/* overflow: hidden; */
 }
 
 .ui-page-active.page {
@@ -44,6 +43,8 @@
 	align-items: center;
 	text-align: center;
 	margin: 0;
+	z-index: 1;
+	position: absolute;
 }
 
 /* Centering article and adding padding */
@@ -55,11 +56,24 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	overflow: hidden;
+	/* overflow: hidden; */
+}
+
+
+.ui-content.img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+	object-fit: cover;
+	position: relative;
+	opacity: 0.8;
 }
 
 .ui-scrollview {
-	display: flex;
+	overflow-y: scroll;
 	justify-content: center;
 	height: 100%;
 	width: 100%;
@@ -69,14 +83,14 @@
 	flex-direction: column;
 }
 
-/* .ui-scrollview h1 {
+.ui-scrollview h1 {
 	margin-top: -0.5em;
 } */
 
-/* .ui-overflow {
+.ui-overflow {
 	overflow-y: scroll;
 	overflow-x: hidden;
-} */
+}
 
 
 /* Fonts and sizes */
