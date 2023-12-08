@@ -102,10 +102,11 @@ function openArticle(articles) {
 		
 		let article = document.createElement("div");
 		article.id = "article" + numb;
-		article.classList.add("article", "ui-page", "ui-scroller", "ui-overflow");
+		article.classList.add("article", "ui-page", "ui-overflow");
 
 		let content = document.createElement("div");
 		content.classList.add("ui-content", "ui-scrollview", "ui-scrollbar", "ui-overflow");
+		// var scroller = tau.widget.Scroller(content);
 
 		let title = document.createElement("h1");
 		title.innerHTML = item.title;
