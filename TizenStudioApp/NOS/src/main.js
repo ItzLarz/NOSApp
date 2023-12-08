@@ -23,7 +23,7 @@ async function loadArticles() {
 					img: item.querySelector("enclosure").getAttribute("url"),
 					text: item.querySelector("description").textContent,
 					date: item.querySelector("pubDate").textContent,
-					link: item.querySelector("link").textContent, // (click to open on phone?)
+					link: item.querySelector("link").textContent, // TODO: (click to open on phone?)
 				});
 			});
 		});
