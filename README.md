@@ -1,6 +1,6 @@
 # NOSApp
 
-A script that fetches articles from the NOS (Dutch news site) RSS Feed. Support for images not included (yet).\
+A script that fetches articles from the NOS (Dutch news site) RSS Feed. Support for images included!! yay.
 \
 The script runs on a (custom) NOS app for Tizen Wearables, such as the Samsung Gear S3.\
 \
